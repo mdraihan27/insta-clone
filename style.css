@@ -16,6 +16,7 @@ nav{
     height: 100vh;
     border-right: 1px solid #DBDBDB;
     width: 317px;
+    position: fixed;
 }
 
 
@@ -79,13 +80,25 @@ nav >div > div button > p , nav > div > button > p{
     width: 24px;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 580px ;
+    
+}
+
 .feed{
     display: flex;
+    width: 702px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+
 }
 
 .stories{
     display: flex;
-    gap: 20px;
+    gap: 18px;
 
 }
 
@@ -98,7 +111,7 @@ nav >div > div button > p , nav > div > button > p{
 
 .stories > div > div >p {
     font-size: 12px;
-    color: #737373;
+    color: #000000;
     font-weight: 400;
 }
 
@@ -107,7 +120,6 @@ nav >div > div button > p , nav > div > button > p{
     width: 82px;
     height: 82px;
     border-radius: 50%;
-    /* border: 1px solid black; */
     position: relative;
     background: white;
     display: flex;
@@ -129,4 +141,267 @@ nav >div > div button > p , nav > div > button > p{
     width: 74px;
     border-radius: 50%;
 }
+
+
+.posts-container{
+    margin: 35px auto 20px;
+}
+.post{
+    width: 468px;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 15px;
+}
+
+.post-head  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.post-head > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.post-head > div > div > img {
+    width: 32px;
+    border-radius: 50%;
+    
+    
+}
+
+.post-head > div > div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3px;
+}
+
+.post-head > div > div::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:linear-gradient(45deg,#FFC700 , #D300C5 );
+    position: absolute;
+    z-index: -1;
+    
+}
+
+
+
+.post-head-user, .suggestions > div > div >div> div >a {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.post-head > div > p{
+    font-size: 14px;
+    color: #737373;
+}
+
+.following{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0095F6;
+    text-decoration: none;
+}
+
+.post-head >  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.post > img {
+    width: 466px;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    margin-bottom: 10px;
+}
+
+.post-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.react-panel{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 9px;
+}
+
+.post-bottom img {
+    width: 24px;
+}
+
+.like-count{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.caption{
+    font-size: 14px;
+    text-align: left;
+    margin:7px 0px 0px;
+}
+
+.caption-username{
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.more{
+    font-size: 14px;
+    text-align: left;
+    color: #737373;
+    text-decoration: none;
+    
+    
+}
+
+.comment-count{
+    font-size: 14px;
+    color: #737373;
+    margin:7px 0px 3px;
+}
+
+.comment{
+    border: none;
+    font-size: 14px;
+    margin-bottom: 17px;
+    
+}
+
+.comment:focus{
+    outline: none;
+}
+
+.right-side{
+    margin: 35px 17px 0px 83px;
+}
+
+.right-side-profile{
+    display: flex;
+    justify-content: space-between;
+    width: 283px;
+    align-items: center;
+}
+
+.right-side-profile > div >img{
+   
+    width: 44px;
+    border-radius: 50%;
+}
+
+.right-side-profile > div {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ 
+    
+}
+
+.right-side-profile > div >a{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.right-side-profile > a{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #0095F6;
+}
+
+.suggestions{
+    width: 283px;
+
+}
+.suggestions>h4{
+    font-size: 14px;
+    color: #737373;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.suggestions>h4 >span{
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+}
+
+.suggestions > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.suggestions > div > div >div >img{
+    width: 44px;
+    border-radius: 50%;
+}
+
+.suggestions > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggestions > div > div >div {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.suggestions > div > div >div>div>p{
+    font-size: 12px;
+    color: #737373;
+}
+
+.suggestions > div  >div>a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #0095F6;
+    font-weight: 600;
+}
+
+.links-container{
+    width: 283px;
+    margin-top: 35px;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.links>a,.links>p, .copyright{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #C7C7C7;
+}
+
 
