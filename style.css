@@ -9,7 +9,7 @@ body{
 
 nav{
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 18px ;
+    padding: 0px 12px 0px 12px ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,39 +19,44 @@ nav{
     position: fixed;
 }
 
-
-nav > div >img {
+.large-logo {
     width: 103px;
-    margin-left: 6px;
-    margin-top: 41px;
-    margin-bottom: 1px;
+    margin:41px 0px 0px 12px;
+    cursor: pointer;
+    
 }
 
-nav >div > div , .lower-nav{
-    margin: 40px 0px 0px 0px ;
+.upper-nav > div , .lower-nav{
+    margin: 30px 0px 0px 2px ;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 8px;
 }
 
-nav >div > div > button > img{
+.upper-nav > div > button > img  {
     width: 24px;
     height: 24px;
     
     margin: 0px;
 }
 
-.nav-profile{
+.nav-profile-pic{
     border-radius: 50%;
 }
 
-nav >div > div button, nav > div > button {
+.upper-nav> div button, .lower-nav > button{
     display: flex;
+    padding: 12px 10px;
     align-items: center;
     gap : 16px;
     background-color: white;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+nav >div > div button:hover, nav > div > button:hover {
+    background-color: #F2F2F2;
 }
 
 nav >div > div button > p , nav > div > button > p{
@@ -67,18 +72,16 @@ nav >div > div button > p , nav > div > button > p{
 .lower-nav{
     display: flex;
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
 
 }
 
 
-.lower-nav > img {
+.lower-nav > button > img {
     width: 24px;
 }
 
-.nav-lower-div img {
-    width: 24px;
-}
+
 
 main{
     display: flex;
@@ -100,6 +103,10 @@ main{
     display: flex;
     gap: 18px;
 
+}
+
+.stories > div{
+    cursor: pointer;
 }
 
 .stories > div > div {
@@ -169,6 +176,7 @@ main{
 .post-head > div > div > img {
     width: 32px;
     border-radius: 50%;
+    cursor: pointer;
     
     
 }
@@ -203,6 +211,7 @@ main{
     font-weight: 600;
     color: black;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .post-head > div > p{
@@ -217,10 +226,12 @@ main{
     text-decoration: none;
 }
 
+
 .post-head >  img {
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .post > img {
@@ -235,14 +246,16 @@ main{
     justify-content: space-between;
 }
 
+.post-bottom img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
 .react-panel{
     display: flex;
     gap: 15px;
     margin-bottom: 9px;
-}
-
-.post-bottom img {
-    width: 24px;
 }
 
 .like-count{
@@ -262,6 +275,7 @@ main{
 .caption-username{
     font-weight: 600;
     margin-right: 4px;
+    cursor: pointer;
 }
 
 .more{
@@ -277,6 +291,7 @@ main{
     font-size: 14px;
     color: #737373;
     margin:7px 0px 3px;
+    cursor: pointer;
 }
 
 .comment{
@@ -305,6 +320,7 @@ main{
    
     width: 44px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .right-side-profile > div {
@@ -330,6 +346,11 @@ main{
     color: #0095F6;
 }
 
+.right-side-profile > a:hover{
+
+    color: #737373;
+}
+
 .suggestions{
     width: 283px;
 
@@ -347,6 +368,7 @@ main{
     font-size: 12px;
     color: black;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .suggestions > div {
@@ -359,6 +381,7 @@ main{
 .suggestions > div > div >div >img{
     width: 44px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .suggestions > div > div {
@@ -385,6 +408,10 @@ main{
     font-weight: 600;
 }
 
+.suggestions > div  >div>a:hover{
+    color: #737373;
+}
+
 .links-container{
     width: 283px;
     margin-top: 35px;
@@ -397,11 +424,13 @@ main{
     margin-bottom: 20px;
 }
 
-.links>a,.links>p, .copyright{
+.links > a, .links > p , .copyright{
     text-decoration: none;
     font-size: 12px;
     font-weight: 400;
     color: #C7C7C7;
 }
+
+
 
 
